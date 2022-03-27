@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int sum, x, end;
+
+    sum = 0;
+
+    // count up to: user input
+    printf("Count from 1 to ___?: ");
+    scanf("%d", &end);
+
+    // iterate by 1 until you get to the end value set by the user
+    for (x = 1; x <= end; ++x)
+    {
+        sum = sum + x;
+    }
+
+    // prints the users set value and the sum of all iterations
+    printf("1+2+...+%d = %d\n", end, sum);
+
+    return 0;
+}
